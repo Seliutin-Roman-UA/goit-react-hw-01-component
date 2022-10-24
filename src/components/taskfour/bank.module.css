@@ -1,0 +1,20 @@
+.transaction_history {
+  width: 450pt;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+thead {
+  background-color: rgb(56, 110, 110);
+  color: rgb(243, 243, 232);
+}
+td,
+th {
+  padding: 10px;
+  font-size: 12px; text-align: center;
+}
+tbody > tr:nth-child(2n) {
+  background-color: rgb(188, 207, 207);
+}
+tr > td:first-child {
+  text-transform: capitalize;
+}
