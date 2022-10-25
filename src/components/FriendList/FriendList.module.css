@@ -2,28 +2,3 @@
   min-width: 300px;
   padding: 10px;
 }
-.item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 250px;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
-    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
-}
-.status {
-  display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-}
-.avatar {
-  border-radius: 5px;
-}
-.name {
-  font-weight: 700;
-}

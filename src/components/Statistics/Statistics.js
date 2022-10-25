@@ -10,14 +10,14 @@ export function StatsInfo({ title, stats }) {
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.stat_list}>
-        {stats.map(i => (
+        {stats.map(({ id, label, percentage }) => (
           <li
-            key={i.id}
+            key={id}
             className={css.item}
             style={{ backgroundColor: `#${getColor()}` }}
           >
-            <span className={css.label}>{i.label}</span>
-            <span className={css.percentage}>{i.percentage}%</span>
+            <span className={css.label}>{label}</span>
+            <span className={css.percentage}>{percentage}%</span>
           </li>
         ))}
       </ul>
@@ -31,6 +31,6 @@ StatsInfo.propTypes = {
       id: PropTypes.string,
       label: PropTypes.string,
       percentage: PropTypes.number,
-    })
-  ),
+    }).isRequired
+  ).isRequired,
 };
