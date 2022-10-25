@@ -1,5 +1,5 @@
 
-import css from './bank.module.css'
+import css from './TransactionHistory.module.css';
 import PropTypes from 'prop-types';
 
 export function TransactionHistory(props) {

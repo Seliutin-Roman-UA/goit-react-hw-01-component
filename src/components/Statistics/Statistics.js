@@ -1,12 +1,11 @@
-import css from './statsinfo.module.css';
+import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 function getColor() {
   return Math.round(Math.random() * 16777215).toString(16);
 }
 
-export function StatsInfo(props) {
-  const { title, stats } = props;
+export function StatsInfo({ title, stats }) {
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
@@ -19,7 +18,7 @@ export function StatsInfo(props) {
           >
             <span className={css.label}>{i.label}</span>
             <span className={css.percentage}>{i.percentage}%</span>
-           </li>
+          </li>
         ))}
       </ul>
     </section>
@@ -27,5 +26,11 @@ export function StatsInfo(props) {
 }
 StatsInfo.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(PropTypes.object),
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
 };

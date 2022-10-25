@@ -1,7 +1,7 @@
-import { UserCard } from './taskone/usercard';
-import { StatsInfo } from './tasktwo/statsinfo';
-import { FriendList } from './taskthree/listfriends';
-import { TransactionHistory } from './taskfour/bank';
+import { UserCard } from './Profile/Profile';
+import { StatsInfo } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 import data from '../data/user.json';
 import stats from '../data/data.json';

@@ -1,11 +1,11 @@
-import css from './usecard.module.css';
+import css from './Profile.module.css';
 import PropTypes from 'prop-types';
 
 export function UserAva(props) {
   const {
     user: { avatar, username, tag, location },
   } = props;
- 
+
   return (
     <div className={css.description}>
       <img className={css.avatar} src={avatar} alt="User avatar" />

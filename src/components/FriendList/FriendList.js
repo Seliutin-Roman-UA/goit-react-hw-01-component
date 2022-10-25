@@ -1,11 +1,11 @@
-import css from './listfriends.module.css';
+import css from './FriendList.module.css';
 import PropTypes from 'prop-types';
 
-export function FriendList(props) {
-  const friendsList = props.friends;
+export function FriendList({ friends }) {
+  
   return (
     <ul className={css.friend_list}>
-      {friendsList.map(i => (
+      {friends.map(i => (
         <li key={i.id} className={css.item}>
           <span
             className={css.status}

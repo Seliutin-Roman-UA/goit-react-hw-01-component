@@ -1,7 +1,7 @@
-import { UserAva } from './userava';
-import { UserStats } from './userstats';
+import { UserAva } from './Userava';
+import { UserStats } from './Userstats';
 
-import css from './usecard.module.css';
+import css from './Profile.module.css';
 
 export function UserCard(props) {
 
