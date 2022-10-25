@@ -18,6 +18,6 @@ export function FriendListItem({ avatar, nameFriends, isOnline }) {
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  nameFriends: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
 };
