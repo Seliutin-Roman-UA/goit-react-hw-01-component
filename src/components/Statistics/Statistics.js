@@ -5,7 +5,7 @@ function getColor() {
   return Math.round(Math.random() * 16777215).toString(16);
 }
 
-export function StatsInfo({ title, stats }) {
+export function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
@@ -24,7 +24,7 @@ export function StatsInfo({ title, stats }) {
     </section>
   );
 }
-StatsInfo.propTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({

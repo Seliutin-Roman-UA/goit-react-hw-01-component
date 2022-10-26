@@ -1,7 +1,7 @@
 import css from './FriendListItem.module.css';
 import PropTypes from 'prop-types';
 
-export function FriendListItem({ avatar, nameFriends, isOnline }) {
+export function FriendListItem({ avatar, name, isOnline }) {
   return (
     <li className={css.item}>
       <span
@@ -11,7 +11,7 @@ export function FriendListItem({ avatar, nameFriends, isOnline }) {
         }}
       ></span>
       <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-      <p className={css.name}>{nameFriends}</p>
+      <p className={css.name}>{name}</p>
     </li>
   );
 }
